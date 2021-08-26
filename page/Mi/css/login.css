@@ -1,0 +1,265 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+ul,
+li {
+	float: left;
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+body {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+input {
+	background: none;
+	outline: none;
+	border: none;
+}
+
+.login_img {
+	background: url(../img/login_1.jpg) no-repeat;
+	height: 100%;
+	width: 375px;
+	background-size: cover;
+	background-position: 50%;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	top: 0;
+}
+
+.login_content {
+	margin-left: 375px;
+	/* height: 100%; */
+	padding: 20px;
+	/* overflow: hidden; */
+	/* min-height: ; */
+}
+
+.header_logo {
+	min-width: 160px;
+	min-height: 50px;
+}
+
+.header_logo img {
+	width: 40px;
+	height: 40px;
+}
+
+.header_logo span {
+	font-size: 26px;
+	color: #333333;
+	font-weight: bold;
+	position: relative;
+	bottom: 10px;
+	left: 5px;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+}
+
+
+.header_menu li {
+	padding: 0 15px;
+	position: relative;
+	line-height: 50px;
+}
+
+.header_division {
+	vertical-align: middle;
+	display: inline-block;
+	margin-right: 20px;
+	height: 14px;
+	width: 0;
+	border-left: 1px solid #ddd;
+}
+
+.header_menu li a {
+	color: #838383;
+	font-size: 13px;
+	transition: .2s;
+}
+
+.header_menu li a:hover {
+	color: #FF6900;
+}
+
+.header_upd_language {
+	position: absolute;
+	width: 96px;
+	height: 80px;
+	top: 40px;
+	left: 35px;
+	box-sizing: border-box;
+	border: 1px solid #E0E0E0;
+	transform: scale(0);
+	transition: .2s;
+	background-color: #FFFFFF;
+	z-index: 999;
+	/* box-shadow:0 5px 29px 0 hsl(0deg 0% 64% / 20%); */
+}
+
+.header_upd_language span {
+	display: block;
+	font-size: 14px;
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	transition: .2s;
+	color: #000000A6;
+}
+
+.header_upd_language span:hover {
+	background-color: #FFF3E6;
+	color: #333333;
+}
+
+.header_menu_li:last-child a:hover>.header_upd_language {
+	transform: scale(1);
+}
+
+.login {
+	text-align: left;
+	display: inline-block;
+	box-sizing: border-box;
+	overflow: hidden;
+	border-radius: 4px;
+	padding: 40px 45px;
+	position: relative;
+	margin: 5% auto 80px;
+	min-width: 450px;
+	display: flex;
+	width: 530px;
+	height: 690px;
+	justify-content: center;
+	border: 1px solid #FFECEC;
+}
+
+.login_qrcod {
+	width: 64px;
+	height: 64px;
+	background-color: #BDBDBD;
+	position: absolute;
+	right: 0;
+	top: 0;
+	text-align: center;
+	line-height: 64px;
+	transition: .2s;
+	cursor: pointer;
+	border-color: #ff5c00 #ff5c00 rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
+}
+
+.login_qrcod:hover {
+	background-color: #595959;
+}
+
+.login_qrcod i {
+	font-size: 36px;
+}
+
+.login_from {
+	width: 450px;
+	height: 600px;
+	background-color: #00C0A5;
+	z-index: 2;
+}
+
+.login_from_title {
+	margin: 10px 10px 50px;
+}
+
+.login_from_title span {
+	font-size: 22px;
+	color: #333333;
+	font-weight: bold;
+	margin-right: 20px;
+	cursor: pointer;
+	border-bottom: 3px solid transparent;
+	padding-bottom: 3px;
+}
+
+.login_from_title span:first-child {
+	border-bottom: 3px solid #FF5C00;
+}
+
+/* .login_from_title span:checked{
+	border-bottom: 3px solid #FF5C00;
+} */
+
+.login_from_input_div_item {
+	width: 354px;
+	height: 60px;
+	background-color: #FCF2F3;
+	position: relative;
+	left: 40px;
+	border-radius: 5px;
+}
+
+.login_from_input_div_item:nth-child(2) {
+	top: 30px;
+}
+
+/* .login_from_input_div_item:checked>input:focus{
+	
+} */
+
+.login_from_input_div_item label {
+	position: absolute;
+	left: 15px;
+	font-size: 17px;
+	color: #F64645;
+	transition: .2s;
+	transform-origin: left;
+	transform: scale(1.5);
+}
+
+.login_from_input_div_item input {
+	position: absolute;
+	top: 30px;
+	left: 20px;
+	width: 300px;
+	height: 30px;
+}
+
+.login_from_input_div_item input:focus~label {
+	transform: scale(1);
+}
+
+.input_sub{
+	width: 356px;
+	height: 60px;
+	background-color: #FF5C00;
+	color: #FFFFFF;
+	text-align: center;
+	line-height: 60px;
+	border-radius: 10px;
+	position: relative;
+	top: 80px;
+	left: 40px;
+	cursor: pointer;
+	transition: .2s;
+}
+
+.input_sub:hover{
+	opacity: .7;
+}
